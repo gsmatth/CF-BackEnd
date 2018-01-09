@@ -9,10 +9,14 @@ describe('greet module', () => {
         let completeString = greet.helloWorldGreet(nameString);
         expect(completeString).toEqual('Hello Veronica');
     });
-    test('returns "null" if the parameter is not a string', () => {
+    test('throws TypeError and message "the name entered must be a string" ', () => {
         let invalidStringParameter = 67;
-        let nullReturnValue = greet.helloWorldGreet(invalidStringParameter);
-        expect(nullReturnValue).toEqual(null);
+        function greetWithoutString(){
+            greet.helloWorldGreet(invalidStringParameter);
+        }
+        
+        expect(greetWithoutString).toThrowError(TypeError);
+        expect(greetWithoutString).toThrowError('the name entered must be a string');
     });
 
     });

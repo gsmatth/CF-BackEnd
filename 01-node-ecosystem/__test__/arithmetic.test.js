@@ -13,7 +13,6 @@ describe('arithmetic module', () => {
         let c = 5;
         let d = true;
         let nonNumberReturnValue = arithmetic.add(c, d);
-        console.log(nonNumberReturnValue);
         expect(nonNumberReturnValue).toEqual(null);
     });
     test('subtract method, returns accurate remainder of subtraction of two provided numbers', () => {
