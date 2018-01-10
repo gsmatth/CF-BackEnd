@@ -1,0 +1,23 @@
+{
+  "name": "02-tools-and-context",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "eslintConfig": {
+    "env": {
+      "browser": true,
+      "node": true
+    }
+  },
+  "scripts": {
+    "test": "jest -i --coverage",
+    "lint": "eslint ."
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.15.0",
+    "jest": "^22.0.5"
+  }
+}
