@@ -1,0 +1,16 @@
+{
+  "name": "03-async-callbacks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest -i --coverage",
+    "lint": "eslint ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^4.15.0",
+    "jest": "^22.0.5"
+  }
+}
